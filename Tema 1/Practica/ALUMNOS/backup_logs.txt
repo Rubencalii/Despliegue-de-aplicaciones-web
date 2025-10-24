@@ -1,0 +1,23 @@
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+(1/6) Installing mariadb-common (11.4.8-r0)
+(2/6) Installing libgcc (14.2.0-r6)
+(3/6) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+(4/6) Installing libncursesw (6.5_p20250503-r0)
+(5/6) Installing libstdc++ (14.2.0-r6)
+(6/6) Installing mariadb-client (11.4.8-r0)
+Executing busybox-1.37.0-r19.trigger
+OK: 49 MiB in 22 packages
+[backup] Iniciando ciclo (cada 60s) contra db/testdb
+[backup] Generando /backups/backup-2025-10-24-081011.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081011.sql
+[backup] Generando /backups/backup-2025-10-24-081111.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081111.sql
+[backup] Generando /backups/backup-2025-10-24-081211.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081211.sql
+[backup] Generando /backups/backup-2025-10-24-081311.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081311.sql
+[backup] Generando /backups/backup-2025-10-24-081411.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081411.sql
+[backup] Generando /backups/backup-2025-10-24-081511.sql ...
+[backup] OK -> /backups/backup-2025-10-24-081511.sql
