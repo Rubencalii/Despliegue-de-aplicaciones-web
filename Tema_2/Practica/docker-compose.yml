@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  plesk:
+    image: plesk/plesk
+    container_name: plesk
+    privileged: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - plesk_data_fresh:/var/lib/plesk
+    ports:
+      - "8080:80"
+      - "8444:443"
+      - "8880:8880"
+      - "8443:8443"
+    restart: unless-stopped
+
+volumes:
+  plesk_data_fresh:
