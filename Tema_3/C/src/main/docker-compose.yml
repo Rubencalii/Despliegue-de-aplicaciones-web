@@ -9,6 +9,12 @@ services:
       - "8080:8080"
       - "8443:8443"
     restart: unless-stopped
-
     volumes:
-      - ../../../certs/Practica_3:/usr/local/tomcat/certs
+      # Certificados SSL/TLS
+      - ./certs:/usr/local/tomcat/certs
+      # Configuración del servidor
+      - ./server.xml:/usr/local/tomcat/conf/server.xml
+      # Usuarios y roles
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+      # Aplicación WAR (se generará con Maven)
+      - ../../target/calculadora.war:/usr/local/tomcat/webapps/calculadora.war

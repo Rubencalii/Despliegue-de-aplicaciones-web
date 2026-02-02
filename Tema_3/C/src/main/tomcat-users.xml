@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users xmlns="http://tomcat.apache.org/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd" version="1.0">
+    <role rolename="calc_basic"/>
+    <role rolename="calc_full"/>
+    <user username="basic_user" password="123" roles="calc_basic"/>
+    <user username="full_user" password="321" roles="calc_full"/>
+    
+</tomcat-users>
